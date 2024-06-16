@@ -9,7 +9,7 @@ if (hour >= 4 && hour < 12 && ampm === 'am') {
     greetingUser.innerHTML = 'Good Morning ,';
 } else if (hour >= 12 && hour <= 17 && ampm === 'pm') {
     greetingUser.innerHTML = 'Good Afternoon ,';
-} else if (hour >= 00 && hour <= 04 && ampm === 'am') {
+} else if (hour >= 0 && hour <= 4 && ampm === 'am') {
     greetingUser.innerHTML = 'Good Night Take A Rest or';
 } else {
     greetingUser.textContent = 'Good Evening ,';
