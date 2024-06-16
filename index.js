@@ -98,6 +98,12 @@ app.get('/delete-task', function(req,res){
 });
 
 
+app.get('/api/get', (req, res) => {
+  res.send({ message: "hello back to nodejs" });
+  console.log("listening to 8000");
+});
+
+
 app.listen(port,(err) => {
     if (err) {
         console.log(`Error: ${err}`);
