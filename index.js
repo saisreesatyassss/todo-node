@@ -103,6 +103,16 @@ app.get('/api/get', (req, res) => {
   console.log("listening to 8000");
 });
 
+app.get('/api/user_details', (req, res) => {
+  res.send({
+    user: {
+      name: "satya",
+      age: "18",
+      contact: "7842446454"
+    }
+  });
+  console.log("listening to 4000");
+});
 
 app.listen(port,(err) => {
     if (err) {
