@@ -13,7 +13,7 @@ const app = express();
 // path: routes\index.js
 app.get('/', require('./routes'));
 app.get('/dashboard', require('./routes'));
-app.get('/register', require('./routes'));
+app.get('/api/register', require('./routes'));
 app.get('/alltask', require('./routes'));
 app.get('/completedtask', require('./routes'));
 
@@ -29,7 +29,7 @@ app.use(express.static('assets'));
 
 
 // registering the user in the database
-app.post('/register', (req, res) => {
+app.post('/api/register', (req, res) => {
     Register.create({
         name: req.body.name,
         lastName: req.body.lastName,
